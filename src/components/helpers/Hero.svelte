@@ -10,9 +10,12 @@
 	{/if}
 
 	<div class="text">
-		{#if hed}<h1>{@html hed}</h1>{/if}
 		{#if dek}<h2>{@html dek}</h2>{/if}
 		{#if byline}<p>{@html byline}</p>{/if}
+	</div>
+
+	<div class="text2">
+		{#if hed}<h1>{@html hed}</h1>{/if}
 	</div>
 </div>
 
@@ -34,10 +37,24 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
-		color: white;
-		background: rgba(0, 0, 0, 0.5);
+		transform: translate(-5%, -50%);
+		color: #1D201F;
+		background: #F8e3BC;
+		padding: 0 1.5rem;
+		text-align: center;
+		border-radius: 90px;
+	}
+
+	.text2 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-105%, -250%);
+		color: #1D201F;
+		background: #F8e3BC;
 		padding: 0 1rem;
 		text-align: center;
+		border-radius: 100px;
 	}
+
 </style>
