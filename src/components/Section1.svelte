@@ -1,61 +1,48 @@
-<script>
-    const showPopup = $state(true);
 
-    import { onMount} from 'svelte';
-    const { title = 'Retro Window', visible: visibleProp = true } = $props();
-    let visible = visibleProp;
-  
-    let pos = { x: 100, y: 100 };
-    let offset = { x: 0, y: 0 };
-    let isDragging = false;
-    let z = 10;
-  
-    function close() {
-      visible = false;
-    }
-  
-    function startDrag(e) {
-      isDragging = true;
-      offset.x = e.clientX - pos.x;
-      offset.y = e.clientY - pos.y;
-      z += 1;
-    }
-  
-    function onDrag(e) {
-      if (!isDragging) return;
-      pos.x = e.clientX - offset.x;
-      pos.y = e.clientY - offset.y;
-    }
-  
-    function stopDrag() {
-      isDragging = false;
-    }
-  
-    // 🧠 hook into window events
-    onMount(() => {
-      window.addEventListener('mousemove', onDrag);
-      window.addEventListener('mouseup', stopDrag);
-  
-      return () => {
-        window.removeEventListener('mousemove', onDrag);
-        window.removeEventListener('mouseup', stopDrag);
-      };
-    });
+<div class="sec">
+
+    <div class="text">
+
+    <h1>Why even get a tattoo?</h1>
+        
+      <p>Here are some examples of paragraphs.</p>
+
+        <p>
+        You should wrap your text in a container with a maximum height and the
+        margin set to "0 auto". That way, it's centered on the screen and looks
+        like a nice column.
+     </p>
+
+     <p>
+        Here's a new paragraph. These p tags automatically have some space in
+        between them. You can make some of your text <strong
+            >bold, like this</strong
+        >. Or italics, <i>like this</i>. Maybe you want to include a link to an
+        external source, you could do that
+        <a href="https://www.google.com/maps/">like this</a>.
+        </p>
+
+    </div>
+
+</div>
 
 
+<style>
 
-  </script>
-  
-  <!-- ✅ Runes prefers `onclick` -->
-  <button onclick={() => showPopup.set(true)}>Open Popup</button>
-  
-  <RetroPopup
-    title="My Retro Box"
-    visible={showPopup()}
-    onclose={() => showPopup.set(false)}
-  >
-    <img src="https://placekitten.com/200/150" alt="Kitten" />
-    <p>Look at this retro cat 🐱✨</p>
-  </RetroPopup>
-  
-  
+.sec {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.text {
+    font-size: 25px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+</style>

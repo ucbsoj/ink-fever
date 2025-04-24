@@ -44,8 +44,8 @@
 }
 
 @font-face {
-	font-family: "Patrick Hand";
-	src: url("static/assets/fonts/PatrickHand-Regular.ttf") format("truetype");
+	font-family: "Patrick";
+	src: url("assets/fonts/PatrickHand-Regular.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -53,8 +53,8 @@
 }
 
 @font-face {
-	font-family: "Rock Salt";
-	src: url("static/assets/fonts/RockSalt-Regular.ttf") format("truetype");
+	font-family: "Rock";
+	src: url("assets/fonts/RockSalt-Regular.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;

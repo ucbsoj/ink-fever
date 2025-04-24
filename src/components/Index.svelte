@@ -2,9 +2,12 @@
 	import Demo from "$components/demo/Demo.svelte";
 	import Footer from "$components/Footer.svelte";
 	import Hero from "$components/helpers/Hero.svelte";
-	
-	
-	//import Section1 from "$components/Section1.svelte";
+	import Section1 from "$components/Section1.svelte";
+	import Section2 from "$components/Section2.svelte";
+	import Section3 from "$components/Section3.svelte";
+	import Section4 from "./Section4.svelte";
+
+
 </script>
 
 <Hero 
@@ -17,19 +20,25 @@ alt="A lake and some clouds"
 
 />
 
-<Demo />
+
+<Section1 />
+
+<Section1 />
+
+<Section1 />
+
+<Section2 /> 
+
+<Section3 />
+
+<!-- <Section4 /> -->
 
 
 
 
 
 
-<!-- <Section1 
-title="My Retro Box"
-visible={showPopup}
-onclose={() => showPopup = false}
- />
- -->
+
 
 <Footer />
 
@@ -37,13 +46,17 @@ onclose={() => showPopup = false}
 	:global(body) {
 		background-color: #F8e3BC;
 		color: #1D201F;
+		background-image: url("assets/images/backdrop.jpg");
 	}
 	
 	:global(p) {
-		font-family: "Patrick Hand";
+		font-family: "Patrick";
 	}
 
 	:global(h1) {
-		font-family: "Rock Salt";
+		font-family: "Rock";
+		font-size: 2rem;
 	}
+
+	
 </style>

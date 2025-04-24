@@ -9,9 +9,11 @@
 		<img {src} {alt} />
 	{/if}
 
+	<!-- co pilot and ask for it to be in a container with a background. png or svg image ink splatters -->
 	<div class="text">
 		{#if dek}<h2>{@html dek}</h2>{/if}
 		{#if byline}<p>{@html byline}</p>{/if}
+
 	</div>
 
 	<div class="text2">
@@ -43,6 +45,8 @@
 		padding: 0 1.5rem;
 		text-align: center;
 		border-radius: 90px;
+		font-weight: bolder;
+		background-image: url("assets/images/backdrop.jpg");
 	}
 
 	.text2 {
@@ -55,6 +59,9 @@
 		padding: 0 1rem;
 		text-align: center;
 		border-radius: 100px;
+		font-family: "Patrick-Hand";
+		background-image: url("assets/images/backdrop.jpg");
 	}
+	/* in the test section you would specify */
 
 </style>
