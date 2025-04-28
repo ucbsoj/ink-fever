@@ -2,6 +2,8 @@
 <script>
     import Skull from "$components/Skull.svelte";
 	import bodySvg from "$svg/body1.svg";
+	import Spider from "$components/Spider.svelte";
+	import Heart from "$components/Heart.svelte";
 
 	let buttons = [
 		{text: "A", left: "50%", top: "50%"},
@@ -67,6 +69,17 @@
 			<Skull />
 		{:else if buttonPressed === "ball"}
 			<p>This is a modern history of Tattoos</p>
+		{:else if buttonPressed === "heart"}
+			<Heart />
+		{:else if buttonPressed === "flower"}
+			<p>This is a flower.</p>
+		{:else if buttonPressed === "bird"}
+			<p>This is a modern bird.</p>
+		{:else if buttonPressed === "hand"}
+			<p>This is a hand.</p>
+		{:else if buttonPressed === "spider"}
+			<Spider />
+	
 		{:else}
 			<p>You clicked something other than A or B!</p>
 		{/if}
@@ -90,6 +103,10 @@
 		transform: translate(-50%, -50%);
 		visibility: hidden;
 		padding: 2rem;
+	}
+
+	#flower{
+		cursor: pointer;
 	}
 
 	.popup.visible {
@@ -145,7 +162,7 @@
 		position: relative;
 		background: transparent;
 		top: 50vh;
-		left: 40vw;
+		left: 50vw;
 		transform: translate(-50%, -50%);
 		padding: 2rem;
 		
