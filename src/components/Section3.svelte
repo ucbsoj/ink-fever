@@ -4,6 +4,7 @@
 	import bodySvg from "$svg/body1.svg";
 	import Spider from "$components/Spider.svelte";
 	import Heart from "$components/Heart.svelte";
+	import tatkey from "$svg/tatkey.svg";
 
 	let buttons = [
 		{text: "A", left: "50%", top: "50%"},
@@ -56,9 +57,12 @@
 	{/each}
 </div> -->
 
-<div class="end">
-	<div class="bodSvg">
 
+<div class="end">
+	<div class="key">
+		{@html tatkey}
+	</div>
+	<div class="bodSvg">
 		{@html bodySvg}
 	</div>
 
@@ -105,8 +109,13 @@
 		padding: 2rem;
 	}
 
-	#flower{
+	:global(.bodSvg rect:hover){
 		cursor: pointer;
+		transform: scale(1.15);
+		transform-box: fill-box;
+		transform-origin: center !important;
+		transition: transform 0.2s;
+		
 	}
 
 	.popup.visible {
@@ -168,5 +177,15 @@
 		
 	}
 		
+	.key {	
+		position: absolute;
+		top: 20vh;
+		left: 5vw;
+		background: transparent;
+		width: 30%;
+		height: 60%;
+		z-index: -1;
+
+	}
 
 </style>

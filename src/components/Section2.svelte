@@ -4,15 +4,16 @@
 
 <div class="sec">
     
-    <h1>Why even get a tattoo?</h1>
+    <h1>Flash Sheet, Cheat Sheet, what EVER sheet:
+        Click this sheet on the body y’all!</h1>
 
-    <div class="small">
+    <!-- <div class="small">
 	    <Image
-		    src="assets/images/splat.png"
+		    src="assets/images/body-topper.png"
 		    alt="A lake and some clouds"
 		    caption="The image will fill the width and height of its container"
 	    />
-    </div>
+    </div> -->
 
 </div>
 

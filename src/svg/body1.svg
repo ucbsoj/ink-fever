@@ -16,11 +16,11 @@
 <path d="M4894 2910.61C4894 2910.61 5964.18 3139.08 5634.76 2887.86" stroke="black" stroke-width="40"/>
 <rect id="skull" x="6622" y="13285" width="921" height="921" fill="url(#pattern0_91_72)"/>
 <rect id="heart" x="4171" y="4113" width="1528" height="1509" fill="url(#pattern1_91_72)"/>
-<rect id="hand" x="5418" y="6333.75" width="774" height="1895" transform="rotate(-13.8093 5418 6333.75)" fill="url(#pattern2_91_72)"/>
+<rect id="hand" x="5418" y="6333.75" width="774" height="1895" fill="url(#pattern2_91_72)"/>
 <rect id="bird" x="7969" y="7100" width="935" height="876" fill="url(#pattern3_91_72)"/>
 <rect id="ball" x="4269" y="8127" width="835" height="845" fill="url(#pattern4_91_72)"/>
-<rect id="spider" x="3903.43" y="10360" width="888.092" height="674.12" transform="rotate(11.8497 3903.43 10360)" fill="url(#pattern5_91_72)"/>
-<rect id="flower" x="3238.67" y="5851" width="862.596" height="766.108" transform="rotate(81.4896 3238.67 5851)" fill="url(#pattern6_91_72)"/>
+<rect id="spider" x="3903.43" y="10360" width="888.092" height="674.12" fill="url(#pattern5_91_72)"/>
+<rect id="flower" x="2400.67" y="6451" width="862.596" height="766.108" fill="url(#pattern6_91_72)"/>
 <defs>
 <pattern id="pattern0_91_72" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_91_72" transform="scale(0.00625)"/>

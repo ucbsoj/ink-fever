@@ -5,7 +5,7 @@
 	import Section1 from "$components/Section1.svelte";
 	import Section2 from "$components/Section2.svelte";
 	import Section3 from "$components/Section3.svelte";
-	import Section4 from "./Section4.svelte";
+
 
 
 </script>
@@ -47,16 +47,20 @@ alt="A lake and some clouds"
 		background-color: #F8e3BC;
 		color: #1D201F;
 		background-image: url("assets/images/backdrop.jpg");
+		cursor: url("assets/images/tatgun2.png"), auto;
 	}
 	
 	:global(p) {
-		font-family: "Patrick";
+		font-family: "Type";
+		font-size: 1.25rem;
+		
 	}
 
 	:global(h1) {
-		font-family: "Rock";
+		font-family: "Sailor";
 		font-size: 2rem;
 	}
+
 
 	
 </style>

@@ -61,3 +61,29 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: "Sailor";
+	src: url("assets/fonts/Sailors-Fat.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tattoo";
+	src: url("assets/fonts/TattooThinline.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Type";
+	src: url("assets/fonts/VictoriaTypewriter.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}

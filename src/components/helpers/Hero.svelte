@@ -47,6 +47,7 @@
 		border-radius: 90px;
 		font-weight: bolder;
 		background-image: url("assets/images/backdrop.jpg");
+		font-family: "Sailor";
 	}
 
 	.text2 {
@@ -59,7 +60,7 @@
 		padding: 0 1rem;
 		text-align: center;
 		border-radius: 100px;
-		font-family: "Patrick-Hand";
+		font-family: "Sailor";
 		background-image: url("assets/images/backdrop.jpg");
 	}
 	/* in the test section you would specify */
