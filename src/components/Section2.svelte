@@ -3,12 +3,11 @@
 </script>
 
 <div class="sec">
-    
-    <h1>Flash Sheet, Cheat Sheet, whatEVER sheet: </h1>
        
-    <h1> You can click all this sheet that you see on the body below,</h1>
+    <h1> Observe the illustrated humanoid:</h1>
+   
 
-    <h1>Start with the Heart!</h1>
+    <h1>Listen to their heart...</h1>
 
     <!-- <div class="small">
 	    <Image

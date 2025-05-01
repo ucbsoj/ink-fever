@@ -34,7 +34,7 @@ alt="A lake and some clouds"
 
 <!-- <Section4 /> -->
 
-<!-- <Canvas /> -->
+<Canvas />
 
 
 

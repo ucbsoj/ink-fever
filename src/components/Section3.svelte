@@ -6,38 +6,40 @@
 	import Heart from "$components/Heart.svelte";
 	import tatkey from "$svg/tatkey.svg";
 	import Bird from "$components/Bird.svelte";
+	import Ball from "$components/Ball.svelte";
+	import Hand from "$components/Hand.svelte";
+	import Flower from "$components/Flower.svelte";
 
-	// let buttons = [
-	// 	{text: "A", left: "50%", top: "50%"},
-	// 	{text: "B", left: "47%", top: "10%"},
-	// 	{text: "C", left: "70%", top: "21%"},
-	// 	{text: "D", left: "42%", top: "80%"}
-	// ]
+
 	let buttonPressed = $state(undefined);
 
-	const onClick = (buttonId) => {
-		buttonPressed = buttonId;
-	}
 
 	const close = () => {
 		buttonPressed = undefined;
 	}
 
 	$effect(() => {
-		// Get all the elipses in the SVG and run onclick when clicked
-		// const elipses = document.querySelectorAll("ellipse");
-		// elipses.forEach((ellipse) => {
-		// 	ellipse.addEventListener("click", () => {
-		// 		const buttonId = ellipse.id;
-		// 		onClick(buttonId);
-
+		
 		// get all rect in the SVG and run onclick when clicked
 		const rects = document.querySelectorAll("rect");
 		rects.forEach((rect) => {
+			if (rect.id === "heart") {
+				rect.classList.add("pulse");
+			};
+			
 			rect.addEventListener("click", () => {
 				const buttonId = rect.id;
-				onClick(buttonId);
-			
+				buttonPressed = buttonId;
+				// remove class pulse from heart (alt)
+				// rects.forEach((r) => {
+				// 	if (r.id === "heart") {
+				// 		r.classList.remove("pulse");
+				// 	}
+				// });
+				
+				const heart = Array.from(rects).find((r) => r.id === "heart");
+				heart.classList.remove("pulse");
+				
 			});
 		});
 	});
@@ -45,18 +47,6 @@
 	$inspect(buttonPressed)
 </script>
 
-<!-- <div class="end"> -->
-
-
-
-<!-- <div class="body-map">
-	{#each buttons as button}
-		<button class="tattoo" style:left={button.left} style:top={button.top} onclick={() => onClick(button.text)}>
-			<img src="assets/images/icon3.png"/>
-				
-		</button>
-	{/each}
-</div> -->
 
 
 <div class="end">
@@ -73,18 +63,18 @@
 		{#if buttonPressed === "skull"}
 			<Skull />
 		{:else if buttonPressed === "ball"}
-			<p>This is a modern history of Tattoos</p>
+			<Ball />
 		{:else if buttonPressed === "heart"}
 			<Heart />
 		{:else if buttonPressed === "flower"}
-			<p>This is a flower.</p>
+			<Flower />
 		{:else if buttonPressed === "bird"}
 			<Bird />
 		{:else if buttonPressed === "hand"}
-			<p>This is a hand.</p>
+			<Hand />
 		{:else if buttonPressed === "spider"}
 			<Spider />
-	
+		
 		{:else}
 			<p>You clicked something other than A or B!</p>
 		{/if}
@@ -109,6 +99,25 @@
 		visibility: hidden;
 		padding: 2rem;
 		z-index: 4;
+	}
+
+	:global(#heart.pulse) {
+		animation: pulse 1.8s infinite;
+		transform-box: fill-box;
+		transform-origin: center !important;
+
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.3);
+		}
+		100% {
+			transform: scale(1);
+		}
 	}
 
 	:global(.bodSvg rect:hover){

@@ -1,20 +1,20 @@
 <script>
     import { fade } from 'svelte/transition';
     
-    let isDrawing = false;
-    let paths = [];
-    let currentPath = [];
+    let isDrawing = $state(false);
+    let paths = $state([]);
+    let currentPath = $state([]);
 
     function handleMouseDown(event) {
         console.log("Mouse down at:", event.clientX, event.clientY);
         isDrawing = true;
-        currentPath = [[event.clientX, event.clientY]];
+        currentPath = [[event.clientX - 10, event.clientY - 10]];
     }
 
     function handleMouseMove(event) {
         if (!isDrawing) return;
         console.log("Mouse move at:", event.clientX, event.clientY);
-        currentPath = [...currentPath, [event.clientX, event.clientY]];
+        currentPath = [...currentPath, [event.clientX - 10, event.clientY - 10]];
     }
 
     function handleMouseUp() {
