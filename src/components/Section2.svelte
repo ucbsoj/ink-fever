@@ -4,8 +4,11 @@
 
 <div class="sec">
     
-    <h1>Flash Sheet, Cheat Sheet, what EVER sheet:
-        Click this sheet on the body y’all!</h1>
+    <h1>Flash Sheet, Cheat Sheet, whatEVER sheet: </h1>
+       
+    <h1> You can click all this sheet that you see on the body below,</h1>
+
+    <h1>Start with the Heart!</h1>
 
     <!-- <div class="small">
 	    <Image
@@ -39,6 +42,8 @@
     
     h1 {
     font-weight: bold;
+    font-family: "Rock";
+    letter-spacing: 0.5rem;
     
     }
 

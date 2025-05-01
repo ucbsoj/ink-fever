@@ -5,6 +5,7 @@
 	import Section1 from "$components/Section1.svelte";
 	import Section2 from "$components/Section2.svelte";
 	import Section3 from "$components/Section3.svelte";
+	import Canvas from "$components/Canvas.svelte";
 
 
 
@@ -23,9 +24,9 @@ alt="A lake and some clouds"
 
 <Section1 />
 
-<Section1 />
+<!-- <Section1 />
 
-<Section1 />
+<Section1 /> -->
 
 <Section2 /> 
 
@@ -33,6 +34,7 @@ alt="A lake and some clouds"
 
 <!-- <Section4 /> -->
 
+<!-- <Canvas /> -->
 
 
 
@@ -47,7 +49,7 @@ alt="A lake and some clouds"
 		background-color: #F8e3BC;
 		color: #1D201F;
 		background-image: url("assets/images/backdrop.jpg");
-		cursor: url("assets/images/tatgun2.png"), auto;
+		cursor: url("assets/images/tatgun2.png") 16 16, auto;
 	}
 	
 	:global(p) {

@@ -5,13 +5,14 @@
 	import Spider from "$components/Spider.svelte";
 	import Heart from "$components/Heart.svelte";
 	import tatkey from "$svg/tatkey.svg";
+	import Bird from "$components/Bird.svelte";
 
-	let buttons = [
-		{text: "A", left: "50%", top: "50%"},
-		{text: "B", left: "47%", top: "10%"},
-		{text: "C", left: "70%", top: "21%"},
-		{text: "D", left: "42%", top: "80%"}
-	]
+	// let buttons = [
+	// 	{text: "A", left: "50%", top: "50%"},
+	// 	{text: "B", left: "47%", top: "10%"},
+	// 	{text: "C", left: "70%", top: "21%"},
+	// 	{text: "D", left: "42%", top: "80%"}
+	// ]
 	let buttonPressed = $state(undefined);
 
 	const onClick = (buttonId) => {
@@ -78,7 +79,7 @@
 		{:else if buttonPressed === "flower"}
 			<p>This is a flower.</p>
 		{:else if buttonPressed === "bird"}
-			<p>This is a modern bird.</p>
+			<Bird />
 		{:else if buttonPressed === "hand"}
 			<p>This is a hand.</p>
 		{:else if buttonPressed === "spider"}
@@ -99,14 +100,15 @@
 <style>
 	.popup {
 		background: #faefe0;
-		height: 400px;
-		width: 600px;
+		height: 60vh;
+		width: 60vw;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		visibility: hidden;
 		padding: 2rem;
+		z-index: 4;
 	}
 
 	:global(.bodSvg rect:hover){
@@ -167,13 +169,14 @@
 
 	.bodSvg {
 		width: 400px;
-		height: 800px;
+		height: 900px;
 		position: relative;
 		background: transparent;
 		top: 50vh;
 		left: 50vw;
 		transform: translate(-50%, -50%);
 		padding: 2rem;
+		z-index: 3;
 		
 	}
 		
