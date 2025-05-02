@@ -1,8 +1,8 @@
 <svg width="8072" height="7762" viewBox="0 0 8072 7762" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="3447" y="6552" width="1210" height="1210" fill="url(#pattern0_111_16)"/>
-<rect x="692" y="633" width="1528" height="1509" fill="url(#pattern1_111_16)"/>
+<rect id="skull2" x="3447" y="6552" width="1210" height="1210" fill="url(#pattern0_111_16)"/>
+<rect id="heart2" x="692" y="633" width="1528" height="1509" fill="url(#pattern1_111_16)"/>
 <g filter="url(#filter0_d_111_16)">
-<rect x="6229" y="713" width="774" height="1895" fill="url(#pattern2_111_16)" shape-rendering="crispEdges"/>
+<rect id="bird2" x="6229" y="713" width="774" height="1895" fill="url(#pattern2_111_16)" shape-rendering="crispEdges"/>
 </g>
 <rect x="616" y="4132" width="1604" height="1503" fill="url(#pattern3_111_16)"/>
 <rect x="3242" y="3745" width="1305" height="1321" fill="url(#pattern4_111_16)"/>

@@ -1,14 +1,17 @@
 
 <script>
     import Skull from "$components/Skull.svelte";
-	import bodySvg from "$svg/body1.svg";
+	import bodySvg from "$svg/body2.svg";
 	import Spider from "$components/Spider.svelte";
 	import Heart from "$components/Heart.svelte";
-	import tatkey from "$svg/tatkey.svg";
+	import tatkey from "$svg/tatkey1.svg";
 	import Bird from "$components/Bird.svelte";
 	import Ball from "$components/Ball.svelte";
 	import Hand from "$components/Hand.svelte";
 	import Flower from "$components/Flower.svelte";
+	import Bfly from "$components/Bfly.svelte";
+	import Cyb from "$components/Cyb.svelte";
+
 
 
 	let buttonPressed = $state(undefined);
@@ -60,23 +63,52 @@
 
 
 	<div class="popup" class:visible={buttonPressed !== undefined}>
+		
 		{#if buttonPressed === "skull"}
 			<Skull />
+		{:else if buttonPressed === "skull2"}
+			<Skull />
+		
 		{:else if buttonPressed === "ball"}
 			<Ball />
+		{:else if buttonPressed === "ball2"}
+			<Ball />
+		
 		{:else if buttonPressed === "heart"}
+		    <Heart />
+		{:else if buttonPressed === "heart2"}
 			<Heart />
+		
 		{:else if buttonPressed === "flower"}
 			<Flower />
+		{:else if buttonPressed === "flower2"}
+			<Flower />
+		
 		{:else if buttonPressed === "bird"}
 			<Bird />
+		{:else if buttonPressed === "bird2"}
+			<Bird />
+		
 		{:else if buttonPressed === "hand"}
 			<Hand />
+		{:else if buttonPressed === "hand2"}
+			<Hand />
+		
 		{:else if buttonPressed === "spider"}
 			<Spider />
+		{:else if buttonPressed === "spider2"}
+			<Spider />
 		
+		{:else if buttonPressed === "bfly"}
+			<Bfly />
+		{:else if buttonPressed === "bfly2"}
+			<Bfly />
+		{:else if buttonPressed === "cyb"}
+			<Cyb />
+		{:else if buttonPressed === "cyb2"}
+			<Cyb />
 		{:else}
-			<p>You clicked something other than A or B!</p>
+			<p>OWW! Don't click me that hurts! </p>
 		{/if}
 
 		<button class="close" onclick={close}>x</button>
@@ -88,9 +120,10 @@
 <!-- closed .end -->
 
 <style>
+	
 	.popup {
 		background: #faefe0;
-		height: 60vh;
+		height: 75vh;
 		width: 60vw;
 		position: absolute;
 		top: 50%;
@@ -154,6 +187,7 @@
         top: 0;
         left: 0;
         background: rgb(231, 95, 95);
+
 	}
 	
     img {
@@ -188,15 +222,24 @@
 		z-index: 3;
 		
 	}
+
+	:global(.key rect:hover) {
+		cursor: pointer;
+		transform: scale(1.15);
+		transform-box: fill-box;
+		transform-origin: center !important;
+		transition: transform 0.2s;
+		
+	}
 		
 	.key {	
 		position: absolute;
-		top: 20vh;
+		top: 5vh;
 		left: 5vw;
 		background: transparent;
-		width: 30%;
-		height: 60%;
-		z-index: -1;
+		width: 35%;
+		height: 75%;
+		z-index: 3;
 
 	}
 

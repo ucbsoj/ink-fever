@@ -28,28 +28,49 @@
 </script>
 
 <div class="vid">
+	
+	<div class="top">
+	<h1>Tattoo King Feo</h1>	
+
+	</div>
+	
 	<video
 		bind:this={videoElement}
 		src="assets/images/hero.mp4"
 		loop
 		muted
 	></video>
-
+ 
+<div class="bottom">
 	<button
 		class="play-button"
 		bind:this={playButtonElement}
 		on:click={togglePlay}
 	>
-		{isPlaying ? 'Pause Video' : 'Play Video'}
+		{isPlaying ? 'Pause' : 'Play'}
 	</button>
 </div>
 
+
+<div class="down">
+	<h1>Japanese Body Suits</h1>
+
+	</div>
+</div>
+
+
+
+
 <style>
+	.top {
+		position: relative;
+		width: 100%;
+	}
 	.vid {
 		position: relative;
 		width: 100%;
 		height: 100%;
-		overflow: hidden;
+		overflow: scroll;
 	}
 
 	video {
@@ -60,15 +81,44 @@
 	}
 
 	.play-button {
-		position: absolute;
-		top: 20px;
-		left: 20px;
+		position: relative;
+		top: 50%;
+		left: 50%;
 		z-index: 10;
-		background-color: rgba(255, 255, 255, 0.85);
-		border: none;
-		padding: 12px 20px;
+		background-color: rgba(226, 236, 231, 0.85);
+		color: #061413;
+		border: black;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 60rem;
+		padding: 10px 5px;
 		font-size: 1rem;
 		cursor: pointer;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		transform: scale(.9);
+		transform-box: fill-box;
+		transform-origin: center !important;
+		transition: transform 0.2s;
+		
+	}
+
+	.bottom{
+		/* this div is below the video */
+		position: relative;
+		width: 100%;
+		height: 2px;
+		
+	}
+
+	.down {
+		position: relative;
+		width: 100%;
+		overflow: scroll;
+		margin-top: 15px;
+		padding-top: 5px;
+	}
+
+	h1 {
+		text-align: center;
 	}
 </style>
