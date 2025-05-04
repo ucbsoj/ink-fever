@@ -94,11 +94,12 @@
 		padding: 10px 5px;
 		font-size: 1rem;
 		cursor: pointer;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 		transform: scale(.9);
 		transform-box: fill-box;
 		transform-origin: center !important;
 		transition: transform 0.2s;
+		
 		
 	}
 

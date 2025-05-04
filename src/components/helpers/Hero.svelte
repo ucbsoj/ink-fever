@@ -19,7 +19,7 @@
 	</div> -->
 
 	<div class="text2">
-		{#if hed}<h2>{@html hed}</h2>{/if}
+		<h2>Ink Fever</h2>
 
 	</div>
 </div>
@@ -43,7 +43,7 @@
 		opacity: 0.5;
 	}
 
-	.text {
+	/* .text {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -56,25 +56,42 @@
 		font-weight: bolder;
 		background-image: url("assets/images/backdrop.jpg");
 		font-family: "Mud";
-		font-size: 2rem;
+		font-size: 4rem;
 	
-	}
-
+	} */
+	/* .background {
+		background-image: url("assets/images/icon13.png");
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #e2e7e5;
+		padding: 0 1rem;
+		z-index: 5;
+	} */
+	 
 	.text2 {
 		position: absolute;
-		top: 50%;
+		top: 40%;
 		left: 50%;
-		transform: translate(-105%, -250%);
+		transform: translate(-50%, -50%);
 		color: #e2e7e5;
 		background: transparent;
 		padding: 0 1rem;
 		text-align: center;
 		border-radius: 100px;
 		font-family: "Mud";
-		font-size: 200px !important;
+		justify-content: center;
+		
 		
 		
 		/* background-image: url("assets/images/backdrop.jpg"); */
+	}
+
+	h2 {
+		font-size: 5rem;
 	}
 	/* in the test section you would specify */
 

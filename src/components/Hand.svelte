@@ -1,16 +1,16 @@
 <div class="full">
-    <div>
+    <!-- <div>
         <img src="assets/images/ex2.png" alt="Background Image" />
-    </div>
+    </div> -->
 
 
-    <div class="talk">
+    <div class="scroll">
         <div>
-            <p>This is Art</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur error harum ipsa! Architecto velit expedita dolor eligendi corporis modi tempora veritatis sit distinctio perferendis. Est id nulla exercitationem quas!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur error harum ipsa! Architecto velit expedita dolor eligendi corporis modi tempora veritatis sit distinctio perferendis. Est id nulla exercitationem quas!</p>
-    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur error harum ipsa! Architecto velit expedita dolor eligendi corporis modi tempora veritatis sit distinctio perferendis. Est id nulla exercitationem quas!</p>
+            <img src="assets/images/art51.png" alt="Background Image" />
+            <img src="assets/images/art52.png" alt="Background Image" />
+            <img src="assets/images/art53.png" alt="Background Image" />
+            <img src="assets/images/art54.png" alt="Background Image" />
+            
         </div>
     </div>
 </div>
@@ -24,7 +24,7 @@
         position: relative;
         overflow: scroll;
     }
-    .talk{
+    .scroll{
         width: 100%;
         position: relative;
         overflow: scroll;
