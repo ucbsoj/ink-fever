@@ -2,6 +2,8 @@
 
     import painfront from "$svg/painfront.svg";
     import painback from "$svg/painback.svg";
+    
+    import {base} from '$app/paths';
 
     
     // const onHover = (buttonId) => {
@@ -50,7 +52,7 @@
     </div>
 
 
-    <div class="sheet">
+    <div class="sheet"style:background-image={`url('${base}/assets/images/art73.png')`}>
         
         <div class="pain">
             <h1>Hover on the body part to see the PAIN!!!</h1>
@@ -85,7 +87,7 @@
         overflow: scroll;
         align-items: center;
         z-index: 1;
-        background-image: url("../assets/images/art73.png");
+        /* background-image: url("../assets/images/art73.png"); */
     }
 
     h1 {

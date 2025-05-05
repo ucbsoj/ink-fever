@@ -12,6 +12,9 @@
 		// set the body background image to the backdrop image
 		const body = document.querySelector("body");
 		body.style.backgroundImage = `url("${base}/assets/images/backdrop.jpg")`;
+
+		// set the cursor image to the tattoo gun
+		body.style.cursor = `url("${base}/assets/images/tatgun2.png") 16 16, auto`;
 	})
 
 </script>
@@ -50,7 +53,6 @@ alt="A lake and some clouds"
 	:global(body) {
 		background-color: #F8e3BC;
 		color: #1D201F;
-		cursor: url("../assets/images/tatgun2.png") 16 16, auto;
 	}
 	
 	:global(p) {
