@@ -85,7 +85,7 @@
         overflow: scroll;
         align-items: center;
         z-index: 1;
-        background-image: url("assets/images/art73.png");
+        background-image: url("/assets/images/art73.png");
     }
 
     h1 {
