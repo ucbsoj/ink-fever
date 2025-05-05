@@ -35,12 +35,7 @@
 
 	</div>
 	<iframe width="100%" height="90%" src="https://www.youtube.com/embed/wLetVMqIUIc?si=r73cgkTb8jmw3X6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	<!-- <video
-		bind:this={videoElement}
-		src="assets/images/Finalmp4.mp4"
-		loop
-		
-	></video> -->
+
  
 <!-- <div class="bottom">
 	<button
