@@ -45,7 +45,7 @@
 
 @font-face {
 	font-family: "Patrick";
-	src: url("assets/fonts/PatrickHand-Regular.ttf") format("truetype");
+	src: url("/assets/fonts/PatrickHand-Regular.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -54,7 +54,7 @@
 
 @font-face {
 	font-family: "Rock";
-	src: url("/fonts/RockSalt-Regular.ttf") format("truetype");
+	src: url("/assets/fonts/RockSalt-Regular.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -63,7 +63,7 @@
 
 @font-face {
 	font-family: "Sailor";
-	src: url("/fonts/Sailors-Fat.ttf") format("truetype");
+	src: url("/assets/fonts/Sailors-Fat.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -72,7 +72,7 @@
 
 @font-face {
 	font-family: "Tattoo";
-	src: url("assets/fonts/TattooThinline.ttf") format("truetype");
+	src: url("/assets/fonts/TattooThinline.ttf") format("truetype");
 	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
@@ -81,7 +81,7 @@
 
 @font-face {
 	font-family: "Type";
-	src: url("/fonts/VictoriaTypewriter.ttf") format("truetype");
+	src: url("/assets/fonts/VictoriaTypewriter.ttf") format("truetype");
 	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
@@ -90,7 +90,7 @@
 
 @font-face {
 	font-family: "Mud";
-	src: url("/fonts/Blackmud.ttf") format("truetype");
+	src: url("/assets/fonts/Blackmud.ttf") format("truetype");
 	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
