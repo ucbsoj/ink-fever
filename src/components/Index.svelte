@@ -48,8 +48,8 @@ alt="A lake and some clouds"
 	:global(body) {
 		background-color: #F8e3BC;
 		color: #1D201F;
-		background-image: url("/assets/images/backdrop.jpg");
-		cursor: url("/assets/images/tatgun2.png") 16 16, auto;
+		background-image: url("../assets/images/backdrop.jpg");
+		cursor: url("../assets/images/tatgun2.png") 16 16, auto;
 	}
 	
 	:global(p) {

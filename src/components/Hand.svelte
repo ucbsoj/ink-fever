@@ -33,7 +33,7 @@
         overflow: scroll;
     }
     .link {
-        background-image: url("assets/images/art73.png");
+        background-image: url("../assets/images/art73.png");
         height: 40%;
         width: 100%;
         position: relative;
