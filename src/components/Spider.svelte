@@ -1,6 +1,7 @@
 <script>
-    import Image from "$components/helpers/Image.svelte";
+
     import painfront from "$svg/painfront.svg";
+    import painback from "$svg/painback.svg";
 
     
     // const onHover = (buttonId) => {
@@ -34,17 +35,40 @@
 
 </script>
 
+
+
 <div class="full">
 
 <div class="scroll">
 
-    <h1>Hover on the body part to see the PAIN!!!</h1>
-    
-    <div class="pain">
+    <div>
+        <img src="assets/images/art71.png" alt="Background Image" />
+        <img src="assets/images/art72.png" alt="Background Image" />
+  
+
+        
+    </div>
+
+
+    <div class="sheet">
+        
+        <div class="pain">
+            <h1>Hover on the body part to see the PAIN!!!</h1>
         {@html painfront}
+       
         </div>
+        <div class="painback">
+            <h1>I'm a wuss so I pained it up from those other drawings!</h1>
+            {@html painback}
+            
+            <div class="ow">
+                <h1>OWWWW</h1>
 
-
+            </div>
+        </div>
+    
+    </div>
+    <!-- close sheet -->
 </div>
 
 </div>
@@ -52,6 +76,17 @@
 <!-- close .full -->
 
 <style>
+
+    .sheet{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: scroll;
+        align-items: center;
+        z-index: 1;
+        background-image: url("assets/images/art73.png");
+    }
 
     h1 {
         font-family: "Rock";
@@ -72,8 +107,19 @@
 
     .pain {
         position: relative;
-        width: 40%;
+        width: 50%;
         height: 60%;
+        display: inline-block;
+        
+    }
+
+    .painback{
+        position: relative;
+        width: 50%;
+        height: 60%;  
+        display: inline-block; 
+      
+        
     }
     .full {
         width: 100%;
@@ -99,7 +145,7 @@
     }
 
     :global(.pain #torso:hover) {
-        fill: rgb(69, 173, 229);
+        fill: rgb(233, 139, 46);
         cursor: pointer;
     }
 
@@ -112,5 +158,48 @@
         fill: red;
         cursor: pointer;
     }
+
+    :global(.painback #back:hover) {
+        fill: rgb(229, 224, 69);
+        cursor: pointer;
+      
+    }
+
+    :global(.painback #backarm:hover) {
+        fill: rgb(69, 173, 229);
+        cursor: pointer;
+    }
+
+    :global(.painback #backlegl:hover) {
+        fill: rgb(99, 46, 233);
+        cursor: pointer;
+    }
+    :global(.painback #backlegr:hover) {
+        fill: rgb(99, 46, 233);
+        cursor: pointer;
+    }
+    :global(.painback #backhead:hover) {
+        fill: red;
+        cursor: pointer;
+    }
+    :global(.painback #allback:hover) {
+        fill: rgb(249, 33, 33);
+        cursor: pointer;
+
+    }
+
+  
+
+
+    
+
+    /* .ow {
+		background: #faefe0;
+		height: 30%;
+		width: 60%;
+		position: relative;
+		visibility: hidden;
+		z-index: 6;
+	} */
 
 </style>

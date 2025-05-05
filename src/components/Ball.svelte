@@ -1,16 +1,25 @@
+
 <div class="full">
-    <div>
+    <!-- <div>
         <img src="assets/images/ex2.png" alt="Background Image" />
-    </div>
+    </div> -->
 
 
-    <div class="talk">
+    <div class="scroll">
         <div>
-            <p>This is Art</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur error harum ipsa! Architecto velit expedita dolor eligendi corporis modi tempora veritatis sit distinctio perferendis. Est id nulla exercitationem quas!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur error harum ipsa! Architecto velit expedita dolor eligendi corporis modi tempora veritatis sit distinctio perferendis. Est id nulla exercitationem quas!</p>
-    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur error harum ipsa! Architecto velit expedita dolor eligendi corporis modi tempora veritatis sit distinctio perferendis. Est id nulla exercitationem quas!</p>
+            <img src="assets/images/art81.png" alt="Background Image" />
+            <img src="assets/images/art82.png" alt="Background Image" />
+            <img src="assets/images/art83.png" alt="Background Image" />
+            <img src="assets/images/art84.png" alt="Background Image" />
+            <img src="assets/images/art85.png" alt="Background Image" />
+            <img src="assets/images/art86.png" alt="Background Image" />
+            <img src="assets/images/art87.png" alt="Background Image" />
+            <img src="assets/images/art88.png" alt="Background Image" />
+            <img src="assets/images/art89.png" alt="Background Image" />
+            <img src="assets/images/art810.png" alt="Background Image" />
+            <img src="assets/images/art811.png" alt="Background Image" />
+            <img src="assets/images/art812.png" alt="Background Image" />
+            
         </div>
     </div>
 </div>
@@ -24,7 +33,7 @@
         position: relative;
         overflow: scroll;
     }
-    .talk{
+    .scroll{
         width: 100%;
         position: relative;
         overflow: scroll;

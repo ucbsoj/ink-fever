@@ -85,8 +85,7 @@
 		font-family: "Mud";
 		justify-content: center;
 		
-		
-		
+
 		/* background-image: url("assets/images/backdrop.jpg"); */
 	}
 

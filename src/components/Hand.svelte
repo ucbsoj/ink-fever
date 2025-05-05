@@ -12,6 +12,9 @@
             <img src="assets/images/art54.png" alt="Background Image" />
             
         </div>
+        <div class="link">
+            <p>Go check out Edith at <a href="https://www.dailycal.org/archives/how-young-people-are-embracing-tattoos-with-open-arms/article_1ff01e28-98c5-5953-8cf4-25b40c6631e2.html">the Daily Cal</a>! But make sure to hit the browser back arrow to come back here after you're done! Don't get lost out there Silly.</p>
+        </div>
     </div>
 </div>
 
@@ -28,5 +31,15 @@
         width: 100%;
         position: relative;
         overflow: scroll;
+    }
+    .link {
+        background-image: url("assets/images/art73.png");
+        height: 40%;
+        width: 100%;
+        position: relative;
+        padding-top: 10px;
+        padding-right: 3px;
+        padding-left: 3px;
+        margin: 10px, 10px;
     }
 </style>

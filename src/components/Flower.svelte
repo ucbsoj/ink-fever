@@ -30,15 +30,16 @@
 <div class="vid">
 	
 	<div class="top">
-	<h1>Tattoo King Feo</h1>	
+	<h1>Ancient Artist Alchemy</h1>	
+	
 
 	</div>
 	
 	<video
 		bind:this={videoElement}
-		src="assets/images/hero.mp4"
+		src="assets/images/Finalmp4.mp4"
 		loop
-		muted
+		
 	></video>
  
 <div class="bottom">
@@ -53,7 +54,10 @@
 
 
 <div class="down">
-	<h1>Japanese Body Suits</h1>
+	<h1>Tattoo King Feo</h1>
+	<p>San Francisco CA, born and raised artist.  
+		Currently based out of Hidden Dragon Tattoo.
+		Gnarly skills.</p>
 
 	</div>
 </div>
@@ -71,6 +75,7 @@
 		width: 100%;
 		height: 100%;
 		overflow: scroll;
+		
 	}
 
 	video {
@@ -121,5 +126,6 @@
 
 	h1 {
 		text-align: center;
+		
 	}
 </style>
