@@ -6,8 +6,13 @@
 	import Section2 from "$components/Section2.svelte";
 	import Section3 from "$components/Section3.svelte";
 	import Canvas from "$components/Canvas.svelte";
+	import { base } from "$app/paths";
 
-
+	$effect(() => {
+		// set the body background image to the backdrop image
+		const body = document.querySelector("body");
+		body.style.backgroundImage = `url("${base}/assets/images/backdrop.jpg")`;
+	})
 
 </script>
 
@@ -39,16 +44,12 @@ alt="A lake and some clouds"
 
 
 
-
-
-
 <Footer />
 
 <style>
 	:global(body) {
 		background-color: #F8e3BC;
 		color: #1D201F;
-		background-image: url("../assets/images/backdrop.jpg");
 		cursor: url("../assets/images/tatgun2.png") 16 16, auto;
 	}
 	
